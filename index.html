@@ -68,7 +68,8 @@
         $('#textarea1').val("エラー：" + textStatus) ; 
       })
       .always(function() {
-        $('#textarea1').val("完了") ; 
+	var txt1 = $('#textarea1').val() ;
+        $('#textarea1').val(txt1 + " " +"完了") ; 
       });
 
 
