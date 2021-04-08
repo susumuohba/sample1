@@ -42,7 +42,6 @@
 	<button type="button" id="btn" class="btn btn-outline-primary">実行</button>
 	<br />
 	<!-- 実行結果 -->
-	<label for="textarea1">実行結果</label>
         <textarea id="textarea1" class="form-control"></textarea>
       </div>
     </div>
@@ -58,6 +57,19 @@
   <!-- Buttob Click Script -->
   <script>
     $('#btn').on('click', function() {
+	    var request = new XMLHttpRequest();
+
+    request.open('GET', ' https://maps.googleapis.com/maps/api/directions/json?language=ja"&"origin=>愛知県名古屋市中区丸の内３丁目６－２７"&"destination=愛知県名古屋市熱田区桜田町 ９－１８"&"key=AIzaSyDgIA_8Jyvo8LMa8J2yS5RemoZkzOBkULI', true);
+    request.responseType = 'json';
+
+    request.onload = function () {
+      var data = this.response;
+    };
+
+    request.send();
+
+
+
        $('#textarea1').val("100");
 　　});
   </script>
