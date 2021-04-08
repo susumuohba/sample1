@@ -37,49 +37,7 @@
 
       <div class="container-fluid">
         <h1 class="mt-4">Prototype Site</h1>
-        <p>元:愛知県名古屋市熱田区桜田町 ９－１８  
-           先:愛知県名古屋市中区丸の内３丁目６－２７</p>
-	<button type="button" id="btn" class="btn btn-outline-primary">実行</button>
-	<br />
-	<!-- 実行結果 -->
-        <textarea id="textarea1" class="form-control"></textarea>
-      </div>
-    </div>
-    <!-- /#page-content-wrapper -->
-
-  </div>
-  <!-- /#wrapper -->
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Buttob Click Script -->
-  <script>
-    $('#btn').on('click', function() {
-     var turl = " https://maps.googleapis.com/maps/api/directions/json?language=ja"&"origin=>愛知県名古屋市中区丸の内３丁目６－２７"&"destination=愛知県名古屋市熱田区桜田町 ９－１８"&"key=AIzaSyDgIA_8Jyvo8LMa8J2yS5RemoZkzOBkULI"
-      $.getJSON(turl, function() {
-        $('#textarea1').val("実行") ; 
-      })
-      .done(function(json) {
-        $('#textarea1').val("成功") ; 
-      })
-      .fail(function(jqXHR, textStatus, errorThrown) {
-        $('#textarea1').val("エラー：" + textStatus + jqXHR.status) ; 
-      })
-      .always(function() {
-	var txt1 = $('#textarea1').val() ;
-        $('#textarea1').val(txt1 + " " +"完了") ; 
-      });
-
-
-
-    //
-    //
-    //
-    //   $('#textarea1').val("100");
-　　});
-  </script>
+	<p>dummy </p>
 
   <!-- Menu Toggle Script -->
   <script>
