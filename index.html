@@ -38,9 +38,9 @@
       <div class="container-fluid">
         <h1 class="mt-4">Prototype Site</h1>
         <p>Prototypeのサイト</p>
-        <p>元:愛知県名古屋市熱田区桜田町 ９－１８</p>
-        <p>先:愛知県名古屋市中区丸の内３丁目６－２７</p>
-	<button type="button" class="btn">Button</button>
+        <p>元:愛知県名古屋市熱田区桜田町 ９－１８  
+           先:愛知県名古屋市中区丸の内３丁目６－２７</p>
+	<button type="button" id="btn" class="btn btn-outline-primary">Button</button>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
@@ -51,6 +51,13 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Buttob Click Script -->
+  <script>
+    $('#btn').on('click', function() {
+       alert("クリックされました");
+　　});
+  </script>
 
   <!-- Menu Toggle Script -->
   <script>
