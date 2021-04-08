@@ -65,7 +65,7 @@
         $('#textarea1').val("成功") ; 
       })
       .fail(function(jqXHR, textStatus, errorThrown) {
-        $('#textarea1').val("エラー：" + textStatus) ; 
+        $('#textarea1').val("エラー：" + textStatus + jqXHR.status) ; 
       })
       .always(function() {
 	var txt1 = $('#textarea1').val() ;
