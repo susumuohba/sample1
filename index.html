@@ -61,13 +61,13 @@
       $.getJSON(turl, function() {
         $('#textarea1').val("実行") ; 
       })
-      .success(function(json) {
+      .done(function(json) {
         $('#textarea1').val("成功") ; 
       })
-      .error(function(jqXHR, textStatus, errorThrown) {
+      .fail(function(jqXHR, textStatus, errorThrown) {
         $('#textarea1').val("エラー：" + textStatus) ; 
       })
-      .complete(function() {
+      .always(function() {
         $('#textarea1').val("完了") ; 
       });
 
