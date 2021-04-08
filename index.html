@@ -26,7 +26,7 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Prototype </div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">manu1</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">menu1</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">menu2</a>
       </div>
     </div>
@@ -37,10 +37,12 @@
 
       <div class="container-fluid">
         <h1 class="mt-4">Prototype Site</h1>
-        <p>Prototypeのサイト</p>
         <p>元:愛知県名古屋市熱田区桜田町 ９－１８  
            先:愛知県名古屋市中区丸の内３丁目６－２７</p>
-	<button type="button" id="btn" class="btn btn-outline-primary">Button</button>
+	<button type="button" id="btn" class="btn btn-outline-primary">実行</button>
+	<!-- 実行結果 -->
+	<label for="textarea1">実行結果</label>
+        <textarea id="textarea1" class="form-control"></textarea>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
@@ -55,7 +57,7 @@
   <!-- Buttob Click Script -->
   <script>
     $('#btn').on('click', function() {
-       alert("クリックされました");
+       $('#textarea1').val("100");
 　　});
   </script>
 
