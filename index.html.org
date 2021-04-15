@@ -15,36 +15,6 @@
 
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
-    
-  
-  <!-- ADD MAP -->
-     <style type="text/css">
-      /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;
-        /* The height is 400 pixels */
-        width: 100%;
-        /* The width is the width of the web page */
-      }
-    </style>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        //const uluru = { lat: -25.344, lng: 131.036 };
-        const uluru = { lat: 35.172808, lng: 136.89019  };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 10,
-          center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
 
 </head>
 
@@ -67,10 +37,8 @@
 
       <div class="container-fluid">
         <h1 class="mt-4">Prototype Site</h1>
-	<p></p>
-   <!-- ADD MAP -->
-   
-          
+	<p>dummy </p>
+
   <!-- Menu Toggle Script -->
   <script>
     $("#menu-toggle").click(function(e) {
