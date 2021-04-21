@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
 
@@ -43,21 +43,21 @@
       // Button Event
       function test1() {
         // The location of Uluru
-        const uluru = { lat: 35.172808, lng: 136.89019  };
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-	  title:"Hello ここここ"
-        });
+       // const uluru = { lat: 35.172808, lng: 136.89019  };
+       // The marker, positioned at Uluru
+       // const marker = new google.maps.Marker({
+       //   position: uluru,
+       //   map: map,
+       //	  title:"Hello ここここ"
+      //  });
   
       const directionsService = new google.maps.DirectionsService();
       const directionsRenderer = new google.maps.DirectionsRenderer();
 
       directionsRenderer.setMap(map);
       var request = {
-          origin: "東京",
-          destination: "大阪",
+          origin: "愛知県名古屋市熱田区桜田町19-18",
+          destination: "愛知県名古屋市中区丸の内3丁目6-27",
           travelMode: google.maps.DirectionsTravelMode.DRIVING,
           unitSystem: google.maps.DirectionsUnitSystem.METRIC,
           optimizeWaypoints: true,
@@ -97,8 +97,8 @@
    <p></p>
    <!-- ADD Title -->
      <div class="container-fluid">
-        <p>元:愛知県名古屋市熱田区桜田町 ９－１８
-           先:愛知県名古屋市中区丸の内３丁目６－２７</p>
+        <p>元:愛知県名古屋市熱田区桜田町19-18 
+           先:愛知県名古屋市中区丸の内3丁目6-27</p>
      </div>
           
      
