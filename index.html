@@ -54,15 +54,15 @@
         const directionsService = new google.maps.DirectionsService();
   	const directionsRenderer = new google.maps.DirectionsRenderer();
 	
-	 directionsRenderer.setMap(map);
+	directionsRenderer.setMap(map);
 
          directionsService.route(
     	{
       	   origin: {
-           query: document.getElementById("start").value,
+           query: "愛知県名古屋市中区丸の内３丁目６－２７""
         },
            destination: {
-           query: document.getElementById("end").value,
+           query: "愛知県名古屋市熱田区桜田町 ９－１８"
         },
         travelMode: google.maps.TravelMode.DRIVING,
         },
