@@ -35,7 +35,7 @@
         const uluru = { lat: 35.172808, lng: 136.89019  };
         // The map, centered at Uluru
          map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 22,
+          zoom: 15,
           center: uluru,
         });
       }
@@ -50,7 +50,32 @@
           map: map,
 	  title:"Hello ここここ"
         });
+	//
+        const directionsService = new google.maps.DirectionsService();
+  	const directionsRenderer = new google.maps.DirectionsRenderer();
+	
+	 directionsRenderer.setMap(map);
+
+         directionsService.route(
+    	{
+      	   origin: {
+           query: document.getElementById("start").value,
+        },
+           destination: {
+           query: document.getElementById("end").value,
+        },
+        travelMode: google.maps.TravelMode.DRIVING,
+        },
+       (response, status) => {
+        if (status === "OK") {
+         console.log("*** OK ***")
+        //   directionsRenderer.setDirections(response);
+      } else {
+        window.alert("Directions request failed due to " + status);
       }
+    }
+       );
+    }
 
     </script>
 
