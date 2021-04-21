@@ -50,32 +50,7 @@
           map: map,
 	  title:"Hello ここここ"
         });
-	//
-        const directionsService = new google.maps.DirectionsService();
-  	const directionsRenderer = new google.maps.DirectionsRenderer();
-	
-	directionsRenderer.setMap(map);
-
-         directionsService.route(
-    	{
-      	   origin: {
-           query: "愛知県名古屋市中区丸の内３丁目６－２７""
-        },
-           destination: {
-           query: "愛知県名古屋市熱田区桜田町 ９－１８"
-        },
-        travelMode: google.maps.TravelMode.DRIVING,
-        },
-       (response, status) => {
-        if (status === "OK") {
-         console.log("*** OK ***")
-        //   directionsRenderer.setDirections(response);
-      } else {
-        window.alert("Directions request failed due to " + status);
       }
-    }
-       );
-    }
 
     </script>
 
