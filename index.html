@@ -42,14 +42,6 @@
 
       // Button Event
       function test1() {
-        // The location of Uluru
-       // const uluru = { lat: 35.172808, lng: 136.89019  };
-       // The marker, positioned at Uluru
-       // const marker = new google.maps.Marker({
-       //   position: uluru,
-       //   map: map,
-       //	  title:"Hello ここここ"
-      //  });
   
       const directionsService = new google.maps.DirectionsService();
       const directionsRenderer = new google.maps.DirectionsRenderer();
@@ -60,6 +52,7 @@
           destination: "愛知県名古屋市中区丸の内3丁目6-27",
           waypoints: [
              { location: "愛知県名古屋市中村区名駅一丁目1番4号" },
+             { location: "愛知県名古屋市千種区内山三丁目" },
            ], 
           travelMode: google.maps.DirectionsTravelMode.DRIVING,
           unitSystem: google.maps.DirectionsUnitSystem.METRIC,
