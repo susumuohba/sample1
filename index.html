@@ -55,7 +55,24 @@
       const directionsRenderer = new google.maps.DirectionsRenderer();
 
       directionsRenderer.setMap(map);
-      
+      var request = {
+          origin: "東京",
+          destination: "大阪",
+          travelMode: google.maps.DirectionsTravelMode.DRIVING,
+          unitSystem: google.maps.DirectionsUnitSystem.METRIC,
+          optimizeWaypoints: true,
+          avoidHighways: false,
+          avoidTolls: false
+      }
+
+       directionsService.route(request,
+         function(response,status){
+          if (status == google.maps.DirectionsStatus.OK){
+  directionsDisplay.setDirections(response)
+          }
+       })
+
+
       
       //End Function
       }
