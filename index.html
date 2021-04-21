@@ -58,6 +58,9 @@
       var request = {
           origin: "愛知県名古屋市熱田区桜田町19-18",
           destination: "愛知県名古屋市中区丸の内3丁目6-27",
+          waypoints: [
+             { location: "愛知県名古屋市中村区名駅一丁目1番4号" },
+           ], 
           travelMode: google.maps.DirectionsTravelMode.DRIVING,
           unitSystem: google.maps.DirectionsUnitSystem.METRIC,
           optimizeWaypoints: true,
