@@ -68,7 +68,8 @@
        directionsService.route(request,
          function(response,status){
           if (status == google.maps.DirectionsStatus.OK){
-             console.log(response["routes"]["legs"])
+             //console.log(response["routes"]["legs"])
+             console.log(response["routes"])
              directionsRenderer.setDirections(response)
           }
        })
