@@ -70,7 +70,14 @@
           if (status == google.maps.DirectionsStatus.OK){
              //console.log(response["routes"]["legs"])
              let tmpArray = response["routes"] 
-             console.log(tmpArray[1])
+             //
+             let i = 0 ;
+             fruits.forEach(function(item, index, tmpArray) {
+                 console.log(i)
+                 console.log(item, index)
+                 i = i + 1
+             })
+            //
              directionsRenderer.setDirections(response)
           }
        })
