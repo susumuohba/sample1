@@ -69,7 +69,8 @@
          function(response,status){
           if (status == google.maps.DirectionsStatus.OK){
              //console.log(response["routes"]["legs"])
-             console.log(response["routes"])
+             let tmpArray = response["routes"] 
+             console.log(tmpArray[1])
              directionsRenderer.setDirections(response)
           }
        })
