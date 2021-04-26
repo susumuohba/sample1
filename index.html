@@ -29,6 +29,10 @@
     </style>
     <script>
       // Initialize and add the map
+
+     const directionsService = new google.maps.DirectionsService();
+     const directionsRenderer = new google.maps.DirectionsRenderer();
+
      let map ; 
      let listener1 ; 
 
@@ -45,8 +49,8 @@
       // Button Event
       function test1() {
   
-      const directionsService = new google.maps.DirectionsService();
-      const directionsRenderer = new google.maps.DirectionsRenderer();
+//      const directionsService = new google.maps.DirectionsService();
+//      const directionsRenderer = new google.maps.DirectionsRenderer();
 
       directionsRenderer.setMap(map);
       var request = {
