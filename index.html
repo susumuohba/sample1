@@ -83,9 +83,14 @@
       // Button Event
       function test2() {
          // クリックイベントを追加
-         map.addListener('click', function(e) {
+        let handle =  map.addListener('click', function(e) {
            getClickLatLng(e.latLng, map);
          });
+         
+        //イベントリスナー削除
+
+        GEvent.removeListener(handle);
+
      // End function 
      }
 
@@ -98,7 +103,6 @@
         position: lat_lng,
         map: map
       });
-
 
     
     //End function
