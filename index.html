@@ -83,13 +83,12 @@
       // Button Event
       function test2() {
          // クリックイベントを追加
-        let handle =  map.addListener('click', function(e) {
+        let listener1 =  map.addListener('click', function(e) {
            getClickLatLng(e.latLng, map);
          });
          
         //イベントリスナー削除
-
-        map.removeListener(handle);
+      google.maps.event.removeListener(listener1);
 
      // End function 
      }
