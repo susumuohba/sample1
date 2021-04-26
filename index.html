@@ -106,9 +106,28 @@
       //イベントリスナー削除
       google.maps.event.removeListener(listener1);
 
+    //現在の状態をクリア
+      reset()
+   // 新しく追加
+      test3() 
+
     
     //End function
     }
+
+     // ルート削除 
+     function reset(){
+        currentDirections=null;
+        directionsDisplay.setMap(null);
+        //renderFLG=false;
+     }
+
+     // ルート削除 */
+     function test3(){
+        alert('aaa')
+     // End Function
+     }
+
 
 
 
