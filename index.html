@@ -82,10 +82,33 @@
 
       // Button Event
       function test2() {
-        alert('aaaa') ; 
-      }
+         // クリックイベントを追加
+         map.addListener('click', function(e) {
+           getClickLatLng(e.latLng, map);
+         });
+     // End function 
+     }
 
-    </script>
+
+     //Event Hander 
+    function getClickLatLng(lat_lng, map) {
+
+     // マーカーを設置
+      var marker = new google.maps.Marker({
+        position: lat_lng,
+        map: map
+      });
+
+
+    
+    //End function
+    }
+
+
+
+
+
+ </script>
 
 </head>
 
