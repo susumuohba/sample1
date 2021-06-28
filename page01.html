@@ -30,9 +30,17 @@
       
      // 固定でいくつかのデータを追加する
         
-       
-    
-    
+     // Aテーブル
+     let tableElemA = document.getElementById('car1');
+        
+     // tbody要素にtr要素（行）を最後に追加   
+     let trElemA = tableElemA.tBodies[0].insertRow(-1);
+        
+     // td要素を追加
+     let cellElem = trElemA.insertCell(0);
+        
+     //td要素にテキストを追加
+     cellElem.appendChild(document.createTextNode('セル'));
     
     }
    </script>
