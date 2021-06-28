@@ -17,11 +17,14 @@
   <link href="css/simple-sidebar.css" rel="stylesheet">
     
   <script>
-   // Button Event 確定処理
-    
+   // 表の要素の削除
     function test1() {
     
-      alert("test1()")
+      let tableElem = document.getElementById('undefPeople');
+        
+      // 固定でいくつかの要素を削除する 
+        
+      tableElem.deleteRow(1);
     }
    </script>
 
@@ -55,7 +58,7 @@
            <!-- 　-->
            <br />
            <!-- 未割り当ての人　-->
-         　<table class="table">
+         　<table class="table" id="undefPeople">
         　 <tbody>
            <tr>
             <td>Aさん</td>
