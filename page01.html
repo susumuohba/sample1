@@ -48,6 +48,21 @@
      //td要素にテキストを追加
      cellElemA2.appendChild(document.createTextNode('中村区○○○○'));
 
+     // tbody要素にtr要素（行）を最後に追加   
+     let trElemAA = tableElemA.tBodies[0].insertRow(-1);
+        
+     // td要素を追加
+     let cellElemAA = trElemAA.insertCell(0);
+        
+     //td要素にテキストを追加
+     cellElemAA.appendChild(document.createTextNode('Dさん'));
+        
+     // td要素を追加
+     let cellElemAA2 = trElemAA.insertCell(1);
+
+     //td要素にテキストを追加
+     cellElemAA2.appendChild(document.createTextNode('熱田区○○○○'));
+
 
      // Bテーブル
      let tableElemB = document.getElementById('car2');
@@ -172,10 +187,6 @@
           
           <table class="table" id="car2">
         　 <tbody>
-           <tr>
-            <td>Aさん</td>
-            <td>中村区○○○○</td>   
-           </tr>
            </tbody>
           </table>
           
@@ -185,10 +196,6 @@
           
           <table class="table" id="car3">
         　 <tbody>
-           <tr>
-            <td>Aさん</td>
-            <td>中村区○○○○</td>   
-           </tr>
            </tbody>
           </table>
           
