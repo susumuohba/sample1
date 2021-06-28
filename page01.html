@@ -23,8 +23,10 @@
       let tableElem = document.getElementById('undefPeople');
         
       // 固定でいくつかの要素を削除する 
-        
+      tableElem.deleteRow(0);
       tableElem.deleteRow(1);
+      tableElem.deleteRow(2);
+      tableElem.deleteRow(3);
     }
    </script>
 
@@ -98,10 +100,42 @@
           <br />
           <!-- 　-->
           <div class="alert alert-success" role="alert">1号車</div>
+          
+          <table class="table" id="car1">
+        　 <tbody>
+           <tr>
+            <td>Aさん</td>
+            <td>中村区○○○○</td>   
+           </tr>
+           </tbody>
+          </table>
+          
           <br />
+          
           <div class="alert alert-success" role="alert">2号車</div>
+          
+          <table class="table" id="car2">
+        　 <tbody>
+           <tr>
+            <td>Aさん</td>
+            <td>中村区○○○○</td>   
+           </tr>
+           </tbody>
+          </table>
+          
           <br />
+          
           <div class="alert alert-success" role="alert">3号車</div>
+          
+          <table class="table" id="car3">
+        　 <tbody>
+           <tr>
+            <td>Aさん</td>
+            <td>中村区○○○○</td>   
+           </tr>
+           </tbody>
+          </table>
+          
           
     　　</div>
   　　</div>
