@@ -42,7 +42,10 @@
      //td要素にテキストを追加
      cellElem.appendChild(document.createTextNode('名前'));
         
-     cellElem.appendChild(document.createTextNode('住所'));
+     // td要素を追加
+     let cellElem2 = trElemA.insertCell(1);
+
+     cellElem2.appendChild(document.createTextNode('住所'));
      
      
     
