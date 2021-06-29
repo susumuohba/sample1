@@ -1,0 +1,3 @@
+function drawMap() {
+  alert("OK") ;  
+}
