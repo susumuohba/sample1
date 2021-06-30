@@ -48,10 +48,10 @@
           if (status == google.maps.DirectionsStatus.OK){
              console.log(response.routes[0].legs[0].distance.text)
              console.log(response.routes[0].legs[0].duration.text)
-             document.getElementById("textarea1").value = 
-             response.routes[0].legs[0].distance.text + 
-             "  " +
-             response.routes[0].legs[0].duration.text; 
+          //   document.getElementById("textarea1").value = 
+          //   response.routes[0].legs[0].distance.text + 
+          //   "  " +
+          //   response.routes[0].legs[0].duration.text; 
              //
             //
              directionsRenderer.setDirections(response)
