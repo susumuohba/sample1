@@ -17,6 +17,8 @@
           zoom: 15,
           center: uluru,
         });
+        // ダミーデータの描画
+        test1()
       }
 
       // Button Event
