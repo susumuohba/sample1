@@ -20,5 +20,13 @@ function dragTable() {
 
      //td要素にテキストを追加
      cellElemB2.appendChild(document.createTextNode('熱田区○○○○'));
+
+     et tableElem = document.getElementById('undefPeople');
+
+      // 固定でいくつかの要素を削除する
+
+      for (let i = 0 ; i < 2 ; i++){
+          tableElem.deleteRow(0);
+      }
 }
 
