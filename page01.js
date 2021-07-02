@@ -29,4 +29,7 @@ function dragTable() {
           tableElem.deleteRow(0);
       }
 }
-
+<!---- --->
+function clicktr(){
+   document.getElementById("tr1").style.backgroundColor="red";
+}
