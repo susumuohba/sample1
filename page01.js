@@ -31,5 +31,5 @@ function dragTable() {
 }
 <!---- --->
 function clicktr(){
-   document.getElementById("tr1").style.backgroundColor="red";
+   document.getElementById("tr1").style.backgroundColor="#E5EDFD";
 }
