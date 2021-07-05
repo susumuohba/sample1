@@ -1,4 +1,9 @@
 function page03s01() {
+  navigator.geolocation.getCurrentPosition(page03s02);   
+}
+
+
+function page03s02() {
   let geo_text = "緯度:" + position.coords.latitude + "\n";
     geo_text += "経度:" + position.coords.longitude + "\n";
     geo_text += "高度:" + position.coords.altitude + "\n";
