@@ -134,3 +134,19 @@
 
 // 
 
+ function showDialog(url,flg,width,height){
+    if(flg){
+        str = showModalDialog (url, "", "status:no;dialogWidth:"+width+"px; dialogHeight:"+height+"px");
+    }else{
+        str = showModelessDialog (url, "", "status:no;dialogWidth:"+width+"px; dialogHeight:"+height+"px");
+    }
+    return str;
+}
+
+//
+
+
+Function test11(){
+    str = showModalDialog ("page022.html", "", "status:no;dialogWidth:320px; dialogHeight:240px");
+
+}
