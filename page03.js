@@ -1,3 +1,3 @@
-function page00s01() {
+function page03s01() {
   alert("OK") ;  
 }
