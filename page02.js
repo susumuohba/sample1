@@ -135,6 +135,6 @@
 
    $( function() {
 	$('#AddCustomer').click( function () {
-		$('#sampleModal').modal();
+		$('#sampleModal').show();
 	});
 });
