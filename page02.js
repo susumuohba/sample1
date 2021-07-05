@@ -132,9 +132,5 @@
      // End Function
      }
 
+// 
 
-   $( function() {
-	$('#AddCustomer').click( function () {
-		$('#sampleModal').show();
-	});
-});
