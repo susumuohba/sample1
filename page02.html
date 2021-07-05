@@ -60,7 +60,26 @@
           <!--- ---->
           <button type="button" id="btn" class="btn btn-outline-primary" onclick="test1()"><h4>地図を更新</h4></button>
           <!--- ---->
-          <button type="button" id="btn" class="btn btn-outline-primary" onclick="test2()"><h4>お客さまの追加</h4></button>
+          <button type="button" id="AddCustomer" class="btn btn-outline-primary" >
+          <h4>お客さまの追加</h4></button>
+         <!-- モーダル・ダイアログ -->
+            <div class="modal fade" id="sampleModal" tabindex="-1">
+	         <div class="modal-dialog">
+		     <div class="modal-content">
+			 <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+				<h4 class="modal-title">タイトル</h4>
+			 </div>
+			<div class="modal-body">
+				本文
+			 </div>
+			 <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+				<button type="button" class="btn btn-primary">ボタン</button>
+			</div>
+		    </div>
+	        </div>
+          </div>
      </div>
 
      <!-- メイン処理 -->
