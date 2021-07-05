@@ -146,7 +146,8 @@
 //
 
 
-Function test11(){
-    str = showModalDialog ("page022.html", "", "status:no;dialogWidth:320px; dialogHeight:240px");
+function test11(){
+    //str = showModalDialog ("page022.html", "", "status:no;dialogWidth:320px; dialogHeight:240px");
+    alert("test11")
 
 }
