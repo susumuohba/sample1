@@ -1,8 +1,4 @@
-function page00s01() {
-  alert("OK") ;  
-}
-
-function test11(){
+function page00s01(){
   var wH = cman_calH("DISP", "2");  // 高さ1/2の計算
   var wW = cman_calW("DISP", "2");  // 横幅1/2の計算
   var wT = cman_calT("DISP", "CC", wH);  // モニター中央 Top計算
