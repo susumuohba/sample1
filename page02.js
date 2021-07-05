@@ -134,15 +134,6 @@
 
 // 
 
- function showDialog(url,flg,width,height){
-    if(flg){
-        str = showModalDialog (url, "", "status:no;dialogWidth:"+width+"px; dialogHeight:"+height+"px");
-    }else{
-        str = showModelessDialog (url, "", "status:no;dialogWidth:"+width+"px; dialogHeight:"+height+"px");
-    }
-    return str;
-}
-
 //
 
 
