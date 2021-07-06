@@ -1,5 +1,5 @@
 function drawMap() {
-   alert('aa') ; 
+   test1() ; 
 }
 
 function dragTable() {
