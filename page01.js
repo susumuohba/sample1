@@ -1,5 +1,5 @@
 function drawMap() {
-   test1() ; 
+   drawMap1() ; 
 }
 
 function dragTable() {
@@ -30,7 +30,7 @@ function dragTable() {
       }
 }
 <!---- --->
- function test1() {
+ function drawMap1() {
   
       directionsService = new google.maps.DirectionsService();
       directionsRenderer = new google.maps.DirectionsRenderer();
