@@ -66,15 +66,16 @@ function dragTable() {
     
     // オプション設定
 directionsRenderer2.setOptions({
-    suppressMarkers: false,
-    suppressPolylines: true,
-    suppressInfoWindows: false,
-    draggable: true,
-    preserveViewport: false,
+//    suppressMarkers: false,
+//    suppressPolylines: true,
+//    suppressInfoWindows: false,
+//    draggable: true,
+//    preserveViewport: false,
     polylineOptions: {
-        strokeColor: '#ff0000',
-        strokeOpacity: 0.5,
-        strokeWeight: 3
+        strokeColor: '#ff0000'
+   //     strokeColor: '#ff0000',
+  //      strokeOpacity: 0.5,
+  //      strokeWeight: 3
     }
 });
     
