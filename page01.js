@@ -64,6 +64,22 @@ function dragTable() {
      directionsService2 = new google.maps.DirectionsService();
      directionsRenderer2 = new google.maps.DirectionsRenderer();
     
+    // オプション設定
+directionsRenderer2.setOptions({
+    suppressMarkers: false,
+    suppressPolylines: true,
+    suppressInfoWindows: false,
+    draggable: true,
+    preserveViewport: false,
+    polylineOptions: {
+        strokeColor: '#ff0000',
+        strokeOpacity: 0.5,
+        strokeWeight: 3
+    }
+});
+    
+    
+    
      directionsRenderer2.setMap(map);
       var request = {
           origin: "愛知県名古屋市熱田区桜田町19-18",
