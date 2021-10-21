@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Prototype Site</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <!--- link href="css/page00.css" rel="stylesheet"--->
+    
+     
+  <!-- ADD MAP -->
+     <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+
+    
+  <script src="./page04.js"></script>
+
+</head>
+
+<body>
+        <!-- ADD MAP -->
+    <div class="container-fluid">
+    <p></p>
+    <div id="map"></div>
+    <p></p>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgIA_8Jyvo8LMa8J2yS5RemoZkzOBkULI&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+</body>
+
+</html>
