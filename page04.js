@@ -46,11 +46,11 @@
        directionsService.route(request,
          function(response,status){
           if (status == google.maps.DirectionsStatus.OK){
-            console.log(response.routes.length)
-            console.log(response.routes[0].waypoint_order)
+            document.writeln(response.routes.length)
+            document.writeln(response.routes[0].waypoint_order)
             for (let i = 0 ; i < response.routes[0].legs.lengt ; i++){
-              console.log(response.routes[0].legs[i].distance.text)
-              console.log(response.routes[0].legs[i].duration.text)
+              document.writeln(response.routes[0].legs[i].distance.text)
+              document.writeln(response.routes[0].legs[i].duration.text)
             }
             
             
