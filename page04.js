@@ -46,9 +46,14 @@
        directionsService.route(request,
          function(response,status){
           if (status == google.maps.DirectionsStatus.OK){
-            console.log(response.routes[0].legs.length)
-             console.log(response.routes[0].legs[0].distance.text)
-             console.log(response.routes[0].legs[0].duration.text)
+            console.log(response.routes.length)
+            console.log(response.routes[0].waypoints)
+            for (int i = 0 ; i < response.routes[0].legs.lengt ; i++){
+              console.log(response.routes[0].legs[i].distance.text)
+              console.log(response.routes[0].legs[i].duration.text)
+            }
+            
+            
           //   document.getElementById("textarea1").value = 
           //   response.routes[0].legs[0].distance.text + 
           //   "  " +
