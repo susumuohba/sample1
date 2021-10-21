@@ -46,21 +46,16 @@
        directionsService.route(request,
          function(response,status){
           if (status == google.maps.DirectionsStatus.OK){
-            document.writeln(response.routes.length)
-            document.writeln(response.routes[0].waypoint_order)
+            console.log(response.routes.length)
+            
             for (let i = 0 ; i < response.routes[0].legs.lengt ; i++){
-              document.writeln(response.routes[0].legs[i].distance.text)
-              document.writeln(response.routes[0].legs[i].duration.text)
+              console.log(response.routes[0].legs[i].distance.text)
+              console.log(response.routes[0].legs[i].duration.text)
             }
+
+            console.log(response.routes[0].waypoint_order)
             
             
-          //   document.getElementById("textarea1").value = 
-          //   response.routes[0].legs[0].distance.text + 
-          //   "  " +
-          //   response.routes[0].legs[0].duration.text; 
-             //
-            //
-           /////  directionsRenderer.setDirections(response)
           }
        })
 
