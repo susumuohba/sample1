@@ -16,23 +16,68 @@
   <!-- Custom styles for this template -->
   <link href="css/simple-sidebar.css" rel="stylesheet">
   <!--- link href="css/page00.css" rel="stylesheet"--->
+    
+     
+  <!-- ADD MAP -->
+     <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
 
     
-<script src="./page04.js"></script>
+  <script src="./page04.js"></script>
 
 </head>
 
 <body>
 
-  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-  <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgIA_8Jyvo8LMa8J2yS5RemoZkzOBkULI&callback=initMap&libraries=&v=weekly"
-  async
-></script>
+  <div class="d-flex" id="wrapper">
 
-  <script>
-    test3();  
-  </script>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <div class="container-fluid">
+        <h1 class="mt-4">管理者 当日確認</h1>
+          
+   <p></p>
+
+   <!--  Link  -->
+     <div class="container-fluid">
+        <a href = "index.html" >indexへのリンク</a>
+     </div>
+
+   <!--  Link  -->
+          
+    <div class="container-fluid">
+      <!--- ---->
+       <div class="alert alert-primary" role="alert">
+            <h4>2021年〇月〇日　状況の表示</h4>
+       </div>　
+        <!--- ---->
+        <button type="button" id="btn" class="btn btn-outline-primary" onclick="page03s01()"><h4>最新状態に更新</h4></button>
+     </div>
+          
+          
+  
+       
+    <!-- ADD MAP -->
+    <div class="container-fluid">
+    <p></p>
+    <div id="map"></div>
+    <p></p>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgIA_8Jyvo8LMa8J2yS5RemoZkzOBkULI&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
 
 </body>
 
