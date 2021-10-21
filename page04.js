@@ -55,6 +55,8 @@
 
             console.log(response.routes[0].legs.length)
 
+            console.log(response.routes[0].legs)
+
             console.log(response.routes[0].waypoint_order)
             
             
