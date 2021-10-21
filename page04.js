@@ -48,7 +48,7 @@
           if (status == google.maps.DirectionsStatus.OK){
             console.log(response.routes.length)
             console.log(response.routes[0].waypoints)
-            for (int i = 0 ; i < response.routes[0].legs.lengt ; i++){
+            for (let i = 0 ; i < response.routes[0].legs.lengt ; i++){
               console.log(response.routes[0].legs[i].distance.text)
               console.log(response.routes[0].legs[i].duration.text)
             }
