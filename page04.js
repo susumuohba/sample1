@@ -20,7 +20,7 @@
       directionsService = new google.maps.DirectionsService();
       directionsRenderer = new google.maps.DirectionsRenderer();
 
-      directionsRenderer.setMap(map);
+      //directionsRenderer.setMap(map);
       var request = {
           origin: "愛知県名古屋市熱田区桜田町19-18",
           destination: "愛知県名古屋市熱田区桜田町19-18",
