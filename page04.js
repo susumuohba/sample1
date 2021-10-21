@@ -54,28 +54,28 @@
           //   response.routes[0].legs[0].duration.text; 
              //
             //
-             directionsRenderer.setDirections(response)
+           /////  directionsRenderer.setDirections(response)
           }
        })
           
          // 別のルートを表示
-     directionsService2 = new google.maps.DirectionsService();
-     directionsRenderer2 = new google.maps.DirectionsRenderer();
+ /////    directionsService2 = new google.maps.DirectionsService();
+ /////    directionsRenderer2 = new google.maps.DirectionsRenderer();
     
     // オプション設定
-directionsRenderer2.setOptions({
+/////directionsRenderer2.setOptions({
 //    suppressMarkers: false,
 //    suppressPolylines: true,
 //    suppressInfoWindows: false,
 //    draggable: true,
 //    preserveViewport: false,
-    polylineOptions: {
-        strokeColor: '#ff0000'
+ /////   polylineOptions: {
+ /////       strokeColor: '#ff0000'
    //     strokeColor: '#ff0000',
   //      strokeOpacity: 0.5,
   //      strokeWeight: 3
-    }
-});
+/////    }
+/////});
     
     
     
@@ -107,77 +107,7 @@ directionsRenderer2.setOptions({
       //End Function
       }
 
-      // Button Event
-      function test2() {
-         // クリックイベントを追加
-         listener1 =  map.addListener('click', function(e) {
-           getClickLatLng(e.latLng, map);
-         });
-         
-
-     // End function 
-     }
-
-
-     //Event Hander 
-    function getClickLatLng(lat_lng, map) {
-
-     // マーカーを設置
-      var marker = new google.maps.Marker({
-        position: lat_lng,
-        map: map
-      });
-
-     g_lat_lng = lat_lng ; 
-
-      //イベントリスナー削除
-      google.maps.event.removeListener(listener1);
-
-    //現在の状態をクリア
-      reset()
-   // 新しく追加
-      test3() 
-
-    
-    //End function
-    }
-
-     // ルート削除 
-     function reset(){
-        directionsRenderer.setMap(null);
-     }
-
-     // 新ルート
-     function test3(){
-      directionsRenderer.setMap(map);
-      var request = {
-          origin: "愛知県名古屋市熱田区桜田町19-18",
-          destination: "愛知県名古屋市熱田区桜田町19-18",
-          waypoints: [
-             { location: "愛知県名古屋市千種区内山三丁目" },
-             { location: "愛知県名古屋市中村区名駅一丁目1番4号" },
-             { location: "愛知県名古屋市中区丸の内3丁目6-27" },
-             { location: g_lat_lng },
-           ], 
-          travelMode: google.maps.DirectionsTravelMode.DRIVING,
-          unitSystem: google.maps.DirectionsUnitSystem.METRIC,
-          optimizeWaypoints: true,
-          avoidHighways: false,
-          avoidTolls: false
-      }
-
-       directionsService.route(request,
-         function(response,status){
-          if (status == google.maps.DirectionsStatus.OK){
-             console.log(response.routes[0].legs[0].distance.text)
-             console.log(response.routes[0].legs[0].duration.text)
-            //
-             directionsRenderer.setDirections(response)
-          }
-       })
-     // End Function
-     }
-
+     
 function page03s01() {
   navigator.geolocation.getCurrentPosition(page03s02);   
 }
