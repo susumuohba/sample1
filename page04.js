@@ -11,11 +11,15 @@
       /////    center: uluru,
       /////  });
       // 経路の計算
-        CaclRoutes()
+      //ダミーのデータ
+      let origindestination = {lat:35.142589 , lng:136.909671} ; 
+      let customer1  = {id:1 , lat:35.17082365 , lng:136.93391909} ;
+      //
+        CaclRoutes(origindestination)
       }
 
       // Button Event
-      function CaclRoutes() {
+      function CaclRoutes(origindestination) {
   
       directionsService = new google.maps.DirectionsService();
       directionsRenderer = new google.maps.DirectionsRenderer();
