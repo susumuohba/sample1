@@ -22,11 +22,9 @@
 
       
       var request = {
-          origin: "愛知県名古屋市熱田区桜田町19-18",
-          //origin:{lat:35.142589 , lng:164.909671},
-          //origin:{lat:164.909671 , lng:35.142589},
-          //origin:{lat:35.142 , lng:164.909},
-          //origin: new google.maps.LatLng(35.142589 ,164.909671),
+          // LatLngの指定で動かいのは？
+          origin: new google.maps.LatLng(35.142589 ,136.909671),
+          //origin: "愛知県名古屋市熱田区桜田町19-18",
           destination: "愛知県名古屋市熱田区桜田町19-18",
           waypoints: [
              { location: "愛知県名古屋市千種区内山三丁目" },
