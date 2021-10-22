@@ -26,8 +26,9 @@
 
       
       var request = {
-          origin: new google.maps.LatLng(35.142589 ,136.909671),
-          destination: new google.maps.LatLng(35.142589 ,136.909671),
+          //origin: new google.maps.LatLng(35.142589 ,136.909671),
+          origin: new google.maps.LatLng(origindestination.lat ,origindestination.lng),
+          destination: new google.maps.LatLng(origindestination.lat ,origindestination.lng),
           waypoints: [
              { location:  new google.maps.LatLng(35.17082365 ,136.93391909)},
              { location:  new google.maps.LatLng(35.173805 ,136.879495) },
