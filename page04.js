@@ -22,14 +22,12 @@
 
       
       var request = {
-          // LatLngの指定で動かいのは？
           origin: new google.maps.LatLng(35.142589 ,136.909671),
-          //origin: "愛知県名古屋市熱田区桜田町19-18",
-          destination: "愛知県名古屋市熱田区桜田町19-18",
+          destination: new google.maps.LatLng(35.142589 ,136.909671),
           waypoints: [
-             { location: "愛知県名古屋市千種区内山三丁目" },
-             { location: "愛知県名古屋市中村区名駅一丁目1番4号" },
-             { location: "愛知県名古屋市中区丸の内3丁目6-27" },
+             { location:  new google.maps.LatLng(35.17082365 ,136.93391909)},
+             { location:  new google.maps.LatLng(35.173805 ,136.879495) },
+             { location:  new google.maps.LatLng(35.176345 ,136.907854)},
            ], 
           travelMode: google.maps.DirectionsTravelMode.DRIVING,
           unitSystem: google.maps.DirectionsUnitSystem.METRIC,
