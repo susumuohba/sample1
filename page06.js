@@ -18,7 +18,7 @@
           center: uluru,
         });
         // ダミーデータの描画
-        test1()
+        //test1()
       }
 
       // Button Event
