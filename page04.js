@@ -58,6 +58,9 @@
 
             // 中継地点の順番と時間をセットする
             console.log(response.routes[0].waypoint_order)
+            // 中継地点の順番と時間をセットする
+            console.log(response.routes[0].legs)
+            
 
             for(let i in response.routes[0].waypoint_order) {
               customers[i].order  =　response.routes[0].waypoint_order[i];
