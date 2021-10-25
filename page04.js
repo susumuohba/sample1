@@ -79,7 +79,7 @@
 
             for (let i in response.routes[0].legs )
             {
-              console.log(response.routes[0].legs[i].duration)
+              console.log((response.routes[0].legs[i].duration.text).replace("分",""))
             }
             
           }
