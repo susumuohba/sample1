@@ -28,7 +28,7 @@
       directionsRenderer = new google.maps.DirectionsRenderer();
 
       //
-      let waypointsString = "[ { location:  new google.maps.LatLng(35.17082365 ,136.93391909)}]"
+      let waypointsString = ["{ location:  new google.maps.LatLng(35.17082365 ,136.93391909)}"]
 
       //  { location:  new google.maps.LatLng(35.173805 ,136.879495) },
       //  { location:  new google.maps.LatLng(35.176345 ,136.907854)}," 
