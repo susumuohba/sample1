@@ -17,9 +17,9 @@
       let origindestination = {lat:35.142589 , lng:136.909671} ; 
     
       let customers = [
-        {id:1 , lat:35.17082365 , lng:136.93391909, order, estimatetime},
-        {id:2 , lat:35.173805 , lng:136.879495    ,order, estimatetime} , 
-        {id:3 , lat:35.176345 , lng:136.907854    ,order, estimatetime}
+        {id:1 , lat:35.17082365 , lng:136.93391909, order:0, estimatetime:0},
+        {id:2 , lat:35.173805 , lng:136.879495    ,order:0, estimatetime:0} , 
+        {id:3 , lat:35.176345 , lng:136.907854    ,order:0, estimatetime:0}
       ] ;
       
       //
