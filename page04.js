@@ -13,8 +13,8 @@
 
 
       // 経路の計算
-      //ダミーのデータ
-      let origindestination = {lat:35.142589 , lng:136.909671} ; 
+      //ダミーのデータ estimatetimeは、最後の中継地から、戻ってくるまでの時間
+      let origindestination = {lat:35.142589 , lng:136.909671, estimatetime:0} ; 
     
       let customers = [
         {id:1 , lat:35.17082365 , lng:136.93391909, order:0, estimatetime:0},
@@ -42,7 +42,6 @@
        
       
       let request = {
-          
           origin: new google.maps.LatLng(parseFloat(origindestination.lat) ,parseFloat(origindestination.lng)),
           destination: new google.maps.LatLng(parseFloat(origindestination.lat) ,parseFloat(origindestination.lng)),
           waypoints:waypointsObject , 
@@ -57,30 +56,24 @@
          function(response,status){
           if (status == google.maps.DirectionsStatus.OK){
 
-            // 中継地点の回る順番が入る配列
-            // 順番をセットする
-            // response.routes[0].waypoint_orderには、順番が逆順（大きい方が優先）
-            // で入っているため、反転する
-            let len =  response.routes[0].waypoint_order.length -1 ; 
+            // 中継地点の順番と時間をセットする
+            console.log(response.routes[0].waypoint_order)
 
             for(let i in response.routes[0].waypoint_order) {
-              customers[i].order  = len -  parseInt(response.routes[0].waypoint_order[i]);
+              customers[i].order  =　response.routes[0].waypoint_order[i];
               //
-              console.log(response.routes[0].waypoint_order[i])
-              //
-              console.log(customers[i].order) ;
+              customers[i].estimatetime = response.routes[0].legs[i].duration.value 
             }
             
-            
-            //console.log(response.routes[0].waypoint_order)
-           
-            // 各経路（出発=>中継地点１など）の情報が入る配列
-            console.log(response.routes[0].legs)
+            // DEBUNG
+            console.log(customers)
 
-            for (let i in response.routes[0].legs )
-            {
-              console.log((response.routes[0].legs[i].duration.text).replace("分",""))
-            }
+            //最後の中継地から、終点までの時間をセットする
+            let len =  response.routes[0].legs.length - 1 ;
+            origindestination.estimatetime = response.routes[0].legs[len].duration.value 
+
+            // DEBUNG
+            console.log(origindestination)
             
           }
        })
