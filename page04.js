@@ -14,6 +14,9 @@
       //ダミーのデータ
       let origindestination = {lat:35.142589 , lng:136.909671} ; 
       let customer1  = {id:1 , lat:35.17082365 , lng:136.93391909} ;
+      let customer2  = {id:1 , lat:35.173805 , lng:136.879495} ;
+      let customer3  = {id:1 , lat:35.176345 , lng:136.907854} ;
+      
       //
         CaclRoutes(origindestination)
       }
@@ -24,16 +27,23 @@
       directionsService = new google.maps.DirectionsService();
       directionsRenderer = new google.maps.DirectionsRenderer();
 
+      //
+      let waypointsString = " { location:  new google.maps.LatLng(35.17082365 ,136.93391909)},"
+
+      //  { location:  new google.maps.LatLng(35.173805 ,136.879495) },
+      //  { location:  new google.maps.LatLng(35.176345 ,136.907854)}," 
+
       
-      var request = {
+      let request = {
           //origin: new google.maps.LatLng(35.142589 ,136.909671),
           origin: new google.maps.LatLng(parseFloat(origindestination.lat) ,parseFloat(origindestination.lng)),
           destination: new google.maps.LatLng(parseFloat(origindestination.lat) ,parseFloat(origindestination.lng)),
-          waypoints: [
-             { location:  new google.maps.LatLng(35.17082365 ,136.93391909)},
-             { location:  new google.maps.LatLng(35.173805 ,136.879495) },
-             { location:  new google.maps.LatLng(35.176345 ,136.907854)},
-           ], 
+          waypoints:waypointsString , 
+ //         waypoints: [
+ //            { location:  new google.maps.LatLng(35.17082365 ,136.93391909)},
+ //            { location:  new google.maps.LatLng(35.173805 ,136.879495) },
+ //            { location:  new google.maps.LatLng(35.176345 ,136.907854)},
+ //          ], 
           travelMode: google.maps.DirectionsTravelMode.DRIVING,
           unitSystem: google.maps.DirectionsUnitSystem.METRIC,
           optimizeWaypoints: true,
