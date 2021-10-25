@@ -34,7 +34,7 @@
       let waypointsObject = new Array(customers.length) ; 
 
       for (let i  in customers ){
-        waypointsObject.add({ location:  new google.maps.LatLng(35.17082365 ,136.93391909)}) ; 
+        waypointsObject.push({ location:  new google.maps.LatLng(35.17082365 ,136.93391909)}) ; 
       }
       // 
       //let waypointsObject = [{ location:  new google.maps.LatLng(35.17082365 ,136.93391909)}]
