@@ -31,17 +31,17 @@
       directionsRenderer = new google.maps.DirectionsRenderer();
 
       //  
-      let waypointsObject = new Array(customers.length) ; 
+      //let waypointsObject = new Array(customers.length) ; 
 
-      for (let i  in customers ){
-        waypointsObject.push({ location:  new google.maps.LatLng(35.17082365 ,136.93391909)}) ; 
-      }
+      //for (let i  in customers ){
+      //  waypointsObject.push({ location:  new google.maps.LatLng(35.17082365 ,136.93391909)}) ; 
+      //}
       // 
-      //let waypointsObject = [{ location:  new google.maps.LatLng(35.17082365 ,136.93391909)}]
 
-      //  { location:  new google.maps.LatLng(35.173805 ,136.879495) },
-      //  { location:  new google.maps.LatLng(35.176345 ,136.907854)}," 
-
+      let waypointsObject = [{ location:  new google.maps.LatLng(35.17082365 ,136.93391909)},
+                             { location:  new google.maps.LatLng(35.173805 ,136.879495) },
+                             { location:  new google.maps.LatLng(35.176345 ,136.907854)}
+                           ]
       
       let request = {
           
