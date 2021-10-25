@@ -66,6 +66,8 @@
             for(let i in response.routes[0].waypoint_order) {
               customers[i].order  = len -  parseInt(response.routes[0].waypoint_order[i]);
               //
+              console.log(response.routes[0].waypoint_order[i])
+              //
               console.log(customers[i].order) ;
             }
             
@@ -74,6 +76,11 @@
            
             // 各経路（出発=>中継地点１など）の情報が入る配列
             console.log(response.routes[0].legs)
+
+            for (let i in response.routes[0].legs )
+            {
+              console.log(response.routes[0].legs[i].duration)
+            }
             
           }
        })
